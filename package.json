@@ -1,0 +1,33 @@
+{
+  "name": "react-test-demo",
+  "version": "1.0.0",
+  "description": "test difference between react 0.12 and 0.13",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "0.13.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^4.0.0",
+    "jest-cli": "^0.4.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "unmockedModulePathPatterns": [
+      "react"
+    ]
+  }
+}
